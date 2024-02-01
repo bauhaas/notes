@@ -10,33 +10,38 @@ export default defineConfig({
     // https://vitepress.dev/reference/default-theme-config
     nav: [
       { text: "Home", link: "/" },
-      { text: "Examples", link: "/markdown-examples" },
+      { text: "MD Examples", link: "/markdown-examples" },
     ],
+
+    editLink: {
+      pattern: "https://github.com/bauhaas/notes/edit/main/docs/:path",
+      text: "Edit this page on GitHub",
+    },
 
     sidebar: generateSidebar({
       // https://github.com/jooy2/vitepress-sidebar#options
       documentRootPath: "/docs",
       debugPrint: true,
-      // collapsed: true,
+      collapsed: true,
+      collapseDepth: 3,
       capitalizeFirst: true,
       useTitleFromFileHeading: true,
       useTitleFromFrontmatter: true, //has priority over useTitleFromFileHeading
       useFolderTitleFromIndexFile: true,
       useFolderLinkFromIndexFile: true,
       sortMenusByName: true,
+      rootGroupCollapsed: true,
+      // rootGroupText: "📚",
     }),
-    // sidebar: [
-    //   {
-    //     text: "Examples",
-    //     items: [
-    //       { text: "Markdown Examples", link: "/markdown-examples" },
-    //       { text: "Runtime API Examples", link: "/api-examples" },
-    //     ],
-    //   },
-    // ],
+
+    footer: {
+      message: "Made with ❤️ by Baudoin Haas",
+      copyright: "Copyright © 2024-present Baudoin Haas",
+    },
 
     socialLinks: [
-      { icon: "github", link: "https://github.com/vuejs/vitepress" },
+      { icon: "github", link: "https://github.com/bauhaas" },
+      { icon: "twitter", link: "https://twitter.com/BaudoinHaas" },
     ],
   },
 });
