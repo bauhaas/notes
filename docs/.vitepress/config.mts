@@ -14,15 +14,16 @@ export default defineConfig({
     ],
 
     sidebar: generateSidebar({
+      // https://github.com/jooy2/vitepress-sidebar#options
+      documentRootPath: "/docs",
       debugPrint: true,
-      documentRootPath: "docs",
-      collapsed: false,
+      // collapsed: true,
       capitalizeFirst: true,
       useTitleFromFileHeading: true,
-      useTitleFromFrontmatter: true,
+      useTitleFromFrontmatter: true, //has priority over useTitleFromFileHeading
       useFolderTitleFromIndexFile: true,
       useFolderLinkFromIndexFile: true,
-      sortMenusByFrontmatterOrder: true,
+      sortMenusByName: true,
     }),
     // sidebar: [
     //   {

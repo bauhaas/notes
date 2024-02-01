@@ -1,10 +1,9 @@
 ---
 layout: doc
 outline: deep
-title: API Examples
 ---
 
-# Runtime API Examples
+# Programming Languages
 
 This page demonstrates usage of some of the runtime APIs provided by VitePress. lol
 
