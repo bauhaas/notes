@@ -4,7 +4,7 @@ import { generateSidebar } from "vitepress-sidebar";
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
   lastUpdated: true,
-  title: "My notes",
+  title: "Bauhaas Notes",
   description: "A VitePress Site",
   appearance: "dark",
   themeConfig: {
@@ -46,5 +46,9 @@ export default defineConfig({
     ],
 
     externalLinkIcon: true,
+
+    search: {
+      provider: "local",
+    },
   },
 });
