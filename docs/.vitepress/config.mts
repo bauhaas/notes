@@ -6,6 +6,7 @@ export default defineConfig({
   lastUpdated: true,
   title: "My notes",
   description: "A VitePress Site",
+  appearance: "dark",
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     nav: [
@@ -30,8 +31,8 @@ export default defineConfig({
       useFolderTitleFromIndexFile: true,
       useFolderLinkFromIndexFile: true,
       sortMenusByName: true,
-      rootGroupCollapsed: true,
-      // rootGroupText: "📚",
+      // rootGroupCollapsed: true,
+      // rootGroupText: "",
     }),
 
     footer: {
@@ -43,5 +44,7 @@ export default defineConfig({
       { icon: "github", link: "https://github.com/bauhaas" },
       { icon: "twitter", link: "https://twitter.com/BaudoinHaas" },
     ],
+
+    externalLinkIcon: true,
   },
 });
