@@ -35,3 +35,36 @@ Stack:
 The project is hosted on [Vercel](https://vercel.com/)
 
 ### Ideas dump
+
+- Usable without signing in and store stuff locally. on signin save current state
+
+Settings and categs
+- order of each category with dnd
+- recently watched (60d)
+- watched movies
+- must watch
+- top 10
+- add movie to collection without impacting stats
+- batch adding
+- movie card custom display options
+
+Stats:
+- hours watched
+- actors ladder
+- director ladder
+- % filmography acorrs / directors
+- github's style datagrid
+- favorite genre / year / ... 
+
+user & Movie table
+- for stats need to add
+  - movie duration
+  - year
+  - director
+  - nationality
+- users
+  - settings enabled/disabled
+  - categs order
+  - oauth ids
+
+  
